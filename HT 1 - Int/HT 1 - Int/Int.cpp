@@ -11,6 +11,11 @@ Int::Int(int value)
 	this->value = value;
 }
 
+Int::Int(Int & object)
+{
+	this->value = object.value;
+}
+
 Int Int::Sum(Int &clas)
 {
 	Int tmp;

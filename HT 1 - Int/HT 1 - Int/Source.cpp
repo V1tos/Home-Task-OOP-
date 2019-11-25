@@ -35,15 +35,18 @@
 
 int main() {
 	Int a(10), b(6), res;
-
+	
 	res = a.Sum(b);
-	cout << "a("; a.ShowInt(); cout << ") + b("; b.ShowInt(); cout << ") = res("; res.ShowInt(); cout << ")\n";
+	cout << "a["; a.ShowInt(); cout << "] + b["; b.ShowInt(); cout << "] = res["; res.ShowInt(); cout << "]\n";
 	res = a.Mult(b);
-	cout << "a("; a.ShowInt(); cout << ") * b("; b.ShowInt(); cout << ") = res("; res.ShowInt(); cout << ")\n";
+	cout << "a["; a.ShowInt(); cout << "] * b["; b.ShowInt(); cout << "] = res["; res.ShowInt(); cout << "]\n";
 	res = a.Dif(b);
-	cout << "a("; a.ShowInt(); cout << ") - b("; b.ShowInt(); cout << ") = res("; res.ShowInt(); cout << ")\n";
+	cout << "a["; a.ShowInt(); cout << "] - b["; b.ShowInt(); cout << "] = res["; res.ShowInt(); cout << "]\n";
 	res = a.Div(b);
-	cout << "a("; a.ShowInt(); cout << ") / b("; b.ShowInt(); cout << ") = res("; res.ShowInt(); cout << ")\n";
+	cout << "a["; a.ShowInt(); cout << "] / b["; b.ShowInt(); cout << "] = res["; res.ShowInt(); cout << "]\n";
+
+	Int c(a);
+	cout << "C -> copy A = "; cout << "c["; c.ShowInt(); cout << "]\n";
 	system("pause");
 	return 0;
 }

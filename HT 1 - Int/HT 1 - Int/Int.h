@@ -12,6 +12,7 @@ private:
 public:
 	Int();
 	Int(int value);
+	Int(Int &object);
 	void SetValue(int &value);
 	int GetValue();
 	Int Sum(Int &Int);
