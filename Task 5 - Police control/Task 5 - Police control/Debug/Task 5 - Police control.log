@@ -1,0 +1,17 @@
+﻿  Source.cpp
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(62): warning C4018: '<': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(110): warning C4018: '<': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(127): warning C4018: '<=': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(170): warning C4018: '<=': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(189): warning C4018: '>=': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(189): warning C4018: '<=': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(193): warning C4804: '>': unsafe use of type 'bool' in operation
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(193): warning C4018: '>': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(193): warning C4804: '<': unsafe use of type 'bool' in operation
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(193): warning C4018: '<': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(215): warning C4018: '<=': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(219): warning C4018: '>=': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(234): warning C4018: '>': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(234): warning C4018: '<': signed/unsigned mismatch
+d:\шаг\програмування\home task (oop)\task 5 - police control\task 5 - police control\source.cpp(206): warning C4715: 'CheckDiapasone': not all control paths return a value
+  Task 5 - Police control.vcxproj -> D:\ШАГ\Програмування\Home Task (OOP)\Task 5 - Police control\Debug\Task 5 - Police control.exe
