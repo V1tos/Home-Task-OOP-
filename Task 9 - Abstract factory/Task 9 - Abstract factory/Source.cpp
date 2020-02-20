@@ -101,21 +101,51 @@ public:
 };
 
 
-void ClientCode(GUIFactory &guiFactory) {
-	Button *guiButton = guiFactory.CreateButton();
-	CheckBox *guiCheckBox = guiFactory.CreateCheckBox();
-	guiButton->PaintButton();
-	guiCheckBox->PaintCheckBox();
+//void ClientCode(GUIFactory &guiFactory) {
+//	Button *guiButton = guiFactory.CreateButton();
+//	CheckBox *guiCheckBox = guiFactory.CreateCheckBox();
+//	guiButton->PaintButton();
+//	guiCheckBox->PaintCheckBox();
+//
+//	delete guiButton;
+//	delete guiCheckBox;
+//}
 
-	delete guiButton;
-	delete guiCheckBox;
-}
+
+
+class Application
+{
+	GUIFactory* appFactory;
+	Button* appButton;
+	CheckBox* appCheckBox;
+
+	void CreateButtonUI() {
+		appButton = appFactory->CreateButton();
+	}
+	void CreateCheckBoxUI() {
+		appCheckBox = appFactory->CreateCheckBox();
+	}
+
+public:
+	Application(GUIFactory* guiFactory) : appFactory(guiFactory) {
+		CreateButtonUI();
+		CreateCheckBoxUI();
+	};
+
+
+	void PaintButton() {
+		appButton->PaintButton();
+	}
+	void PaintCheckBox() {
+		appCheckBox->PaintCheckBox();
+	}
+
+};
 
 
 
 int main() {
-	WinFactory *windows = new WinFactory();
-	MacFactory *macOs = new MacFactory();
+	Application *app;
 	int userChoice = 0;
 
 	cout << "1 - Windows (button, check box)\n2 - Mac OS (button, check box)\nYour choice: ";
@@ -123,10 +153,14 @@ int main() {
 	switch (userChoice)
 	{
 	case 1:
-		ClientCode(*windows);
+		app = new Application(new WinFactory);
+		app->PaintButton();
+		app->PaintCheckBox();
 		break;
 	case 2:
-		ClientCode(*macOs);
+		app = new Application(new MacFactory);
+		app->PaintButton();
+		app->PaintCheckBox();
 		break;
 	default:
 		break;
